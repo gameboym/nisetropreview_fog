@@ -1,0 +1,366 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+//#include "afxres.h"
+#include <windows.h>
+#define IDC_STATIC -1
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_CONFIG DIALOGEX 0, 0, 180, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Config"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_FPS,70,10,100,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_SCRDIR,70,30,100,49,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "更新速度",IDC_STATIC,7,10,63,12
+    LTEXT           "画面の向き",IDC_STATIC,7,30,63,17
+    LTEXT           "拡大率",IDC_STATIC,7,55,63,14
+    CONTROL         "",IDC_SLIDER_SCRSCALE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,70,55,67,11
+    EDITTEXT        IDC_EDIT_SCRSCALE,137,55,33,12,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_DLG_RECORD DIALOGEX 0, 0, 371, 204
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Record"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "録画",IDC_BTN_RECORD,265,184,50,13
+    PUSHBUTTON      "閉じる",IDCLOSE,314,183,50,14
+    LTEXT           "録音デバイス",IDC_STATIC,7,84,55,13
+    COMBOBOX        IDC_COMBO_WAVEINDEV,62,84,266,60,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ファイル名",IDC_STATIC,7,13,55,11
+    EDITTEXT        IDC_EDIT_FILENAME,62,13,280,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TIME,183,182,68,15,ES_AUTOHSCROLL | WS_DISABLED,WS_EX_RIGHT | WS_EX_STATICEDGE
+    PUSHBUTTON      "更新",IDC_BTN_UPDATE,328,84,36,12
+    PUSHBUTTON      "...",IDC_BTN_FILESEL,342,13,22,11
+    LTEXT           "描画速度",IDC_STATIC,62,50,121,12
+    CONTROL         "",IDC_SLIDER_FPS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,62,62,85,16
+    EDITTEXT        IDC_EDIT_FPS,147,62,36,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_SAMPLE_RATE,62,140,121,50,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "サンプリングレート",IDC_STATIC,62,128,121,12
+    LTEXT           "映像ビットレート",IDC_STATIC,194,50,125,12
+    CONTROL         "",IDC_SLIDER_VBITRATE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,195,62,85,16
+    EDITTEXT        IDC_EDIT_VBITRATE,281,62,38,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "音声ビットレート",IDC_STATIC,194,128,125,12
+    CONTROL         "",IDC_SLIDER_ABITRATE,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,195,140,85,14
+    EDITTEXT        IDC_EDIT_ABITRATE,281,140,38,14,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "映像コーディック",IDC_STATIC,7,32,55,12
+    COMBOBOX        IDC_COMBO_VCODEC,62,32,266,46,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "音声コーディック",IDC_STATIC,7,104,55,12
+    COMBOBOX        IDC_COMBO_ACODEC,62,104,266,57,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_FILEINFO,7,152,176,45,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+IDD_DLG_INFO DIALOGEX 0, 0, 180, 131
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Info"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_INFO,0,0,169,94,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DLG_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        VERTGUIDE, 62
+        VERTGUIDE, 147
+        VERTGUIDE, 183
+        VERTGUIDE, 195
+        VERTGUIDE, 280
+        VERTGUIDE, 319
+        VERTGUIDE, 328
+        VERTGUIDE, 342
+        TOPMARGIN, 8
+        BOTTOMMARGIN, 197
+        HORZGUIDE, 13
+        HORZGUIDE, 24
+        HORZGUIDE, 32
+        HORZGUIDE, 44
+        HORZGUIDE, 50
+        HORZGUIDE, 62
+        HORZGUIDE, 78
+        HORZGUIDE, 84
+        HORZGUIDE, 97
+        HORZGUIDE, 104
+        HORZGUIDE, 116
+        HORZGUIDE, 128
+        HORZGUIDE, 140
+        HORZGUIDE, 152
+    END
+
+    IDD_DLG_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+        HORZGUIDE, 101
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "popup"
+    BEGIN
+        MENUITEM "設定",                          ID_MENU_SETTING
+        MENUITEM "情報",                          ID_MENU_INFO
+        MENUITEM "常に手前に表示",                     ID_MENU_TOPWINDOW
+        MENUITEM "エラーフレームを表示しない",               ID_MENU_DROP_ERRFRAME
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&X)",                          ID_MENU_END
+    END
+END
+
+IDR_MENU_MAIN MENU 
+BEGIN
+    POPUP "メニュー(&M)"
+    BEGIN
+        MENUITEM "スクリーンショット",                   ID_MENU_SCREENSHOT
+        MENUITEM "録画",                          ID_MENU_REC
+        MENUITEM SEPARATOR
+        POPUP "Filter"
+		BEGIN
+			MENUITEM "D3DTEXF_NONE",				ID_MENU_D3DFILTER_NONE
+			MENUITEM "D3DTEXF_POINT",				ID_MENU_D3DFILTER_POINT
+			MENUITEM "D3DTEXF_LINEAR",				ID_MENU_D3DFILTER_LINEAR
+			MENUITEM "D3DTEXF_ANISOTROPIC",			ID_MENU_D3DFILTER_ANISOTROPIC
+			MENUITEM "D3DTEXF_PYRAMIDALQUAD",		ID_MENU_D3DFILTER_PYRAMIDALQUAD
+			MENUITEM "D3DTEXF_GAUSSIANQUAD",		ID_MENU_D3DFILTER_GAUSSIANQUAD
+		END
+        POPUP "残像機能"
+		BEGIN
+			MENUITEM "NONE",						ID_MENU_BLUR_NONE
+			MENUITEM "GBCモード",					ID_MENU_BLUR_GBCMODE
+			MENUITEM "GBモード",					ID_MENU_BLUR_GBMODE
+			MENUITEM "GBPモード",					ID_MENU_BLUR_GBPMODE
+			MENUITEM "WSCモード",					ID_MENU_BLUR_WSCMODE
+		END
+        MENUITEM SEPARATOR
+		MENUITEM "終了(&X)",                          ID_MENU_END
+    END
+    POPUP "設定"
+    BEGIN
+        POPUP "回転"
+        BEGIN
+            MENUITEM "縦方向\tCtrl + 1",               ID_MENU_SRCROT_NORMAL
+            MENUITEM "左回転\tCtrl + 2",               ID_MENU_SRCROT_LEFT
+            MENUITEM "右回転\tCtrl + 3",               ID_MENU_SRCROT_RIGHT
+			MENUITEM "ケロリカン用回転\tCtrl + 4",           ID_MENU_SRCROT_KERORICAN
+        END
+        POPUP "倍率"
+        BEGIN
+            MENUITEM "等倍\tCtrl + 5",                ID_MENU_SRCSCAL_X1
+            MENUITEM "２倍\tCtrl + 6",                ID_MENU_SRCSCAL_X2
+            MENUITEM "３倍\tCtrl + 7",                ID_MENU_SRCSCAL_X3
+            MENUITEM "４倍\tCtrl + 8",                ID_MENU_SRCSCAL_X4
+            MENUITEM "５倍\tCtrl + 8",                ID_MENU_SRCSCAL_X5
+        END
+        POPUP "更新速度"
+		BEGIN
+			MENUITEM "60FPS (WS 75FPS)",				ID_MENU_60FPS
+			MENUITEM "30FPS (WS 60FPS)",				ID_MENU_30FPS
+			MENUITEM "20FPS (WS 30FPS)",				ID_MENU_20FPS
+			MENUITEM "15FPS (WS 15FPS)",				ID_MENU_15FPS
+		END
+		POPUP "ハード選択"
+		BEGIN
+			MENUITEM "ゲームボーイカラー",				ID_MENU_CONSOLE_GBC
+			MENUITEM "ゲームボーイ",					ID_MENU_CONSOLE_OGB
+			MENUITEM "ネオジオポケットカラー",			ID_MENU_CONSOLE_NGPC
+			MENUITEM "ワンダースワンクリスタル",		ID_MENU_CONSOLE_SC
+			MENUITEM "P/ECE",							ID_MENU_CONSOLE_PIECE
+		END
+        POPUP "デバイスID"
+		BEGIN
+			MENUITEM "ID:0",							ID_MENU_CUSB2_ID0
+			MENUITEM "ID:1",							ID_MENU_CUSB2_ID1
+			MENUITEM "ID:2",							ID_MENU_CUSB2_ID2
+			MENUITEM "ID:3",							ID_MENU_CUSB2_ID3
+			MENUITEM "ID:4",							ID_MENU_CUSB2_ID4
+			MENUITEM "ID:5",							ID_MENU_CUSB2_ID5
+			MENUITEM "ID:6",							ID_MENU_CUSB2_ID6
+			MENUITEM "ID:7",							ID_MENU_CUSB2_ID7
+			MENUITEM "ID:8",							ID_MENU_CUSB2_ID8
+			MENUITEM "ID:9",							ID_MENU_CUSB2_ID9
+		END
+        MENUITEM "常に手前に表示",						ID_MENU_TOPWINDOW
+        MENUITEM "エラーフレームを表示しない",			ID_MENU_DROP_ERRFRAME
+        MENUITEM SEPARATOR
+        MENUITEM "設定",								ID_MENU_SETTING
+        MENUITEM "情報",								ID_MENU_INFO
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR1 ACCELERATORS 
+BEGIN
+    "1",            ID_MENU_SRCROT_NORMAL,     VIRTKEY, CONTROL, NOINVERT
+    "2",            ID_MENU_SRCROT_LEFT,       VIRTKEY, CONTROL, NOINVERT
+    "3",            ID_MENU_SRCROT_RIGHT,      VIRTKEY, CONTROL, NOINVERT
+    "4",            ID_MENU_SRCROT_KERORICAN,  VIRTKEY, CONTROL, NOINVERT
+    "5",            ID_MENU_SRCSCAL_X1,        VIRTKEY, CONTROL, NOINVERT
+    "6",            ID_MENU_SRCSCAL_X2,        VIRTKEY, CONTROL, NOINVERT
+    "7",            ID_MENU_SRCSCAL_X3,        VIRTKEY, CONTROL, NOINVERT
+    "8",            ID_MENU_SRCSCAL_X4,        VIRTKEY, CONTROL, NOINVERT
+    "9",            ID_MENU_SRCSCAL_X5,        VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,0,7
+ PRODUCTVERSION 0,0,0,7
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "偽トロ用プレビューソフト"
+            VALUE "FileDescription", "偽トロプレビュー for OldGames"
+            VALUE "FileVersion", "2012/1/18"
+            VALUE "OriginalFilename", "NiseTroPreview*.exe"
+			VALUE "ProductVersion", "local svn revision:266"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_TITLE        "偽トロプレビュー for OldGames"
+    IDS_STRING_DEF_CAPNAME  "default.avi"
+	IDS_STRING_DEF_FILTER	"*.avi\0*.avi\0 *.mpeg\0*.mpeg\0*.*\0*.*\0\0"
+    IDS_STRING_DEF_EXT		"avi\mpeg\0*\0"
+    IDS_STRING_WAR_EXIT_REC "録画を終了してください。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_ERR_USB_CONNECT "カメレオンＵＳＢを接続して、ソフトを再起動してください。"
+    IDS_STRING_ERR_SCREENSHOT "スクリーンショットの保存に失敗しました。"
+    IDS_STRING_ERR_RECORD   "初期化に失敗しました。録画設定を見直してください。"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_60FPS        "60 FPS (WS 75FPS)"
+    IDS_STRING_30FPS        "30 FPS (WS 60FPS)"
+    IDS_STRING_20FPS        "20 FPS (WS 30FPS)"
+    IDS_STRING_15FPS        "15 FPS (WS 15FPS)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_NORMAL       "縦方向"
+    IDS_STRING_LROT         "左回転"
+    IDS_STRING_RROT         "右回転"
+    IDS_STRING_KERORICAN    "ケロリカン用回転"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

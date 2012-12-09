@@ -1,0 +1,250 @@
+<HTML>
+<HEAD>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- ここから日本語ＯＫ -->
+	<TITLE>偽トロプレビュー説明書</TITLE>
+	<link rel="stylesheet" type="text/css" href="res/page.css">
+	<link rel="stylesheet" type="text/css" href="res/frame.css">
+	<link rel="stylesheet" type="text/css" href="res/link.css">
+	<link rel="stylesheet" type="text/css" href="res/border/border.css">
+</HEAD>
+<BODY background="res/bg.png">
+<div id="container">
+<!--	<div id="header">
+	</div>	-->
+	<div id="sidebar">
+		<font size=5>メニュー</font>
+		<li><a href="#overview">概要</a></li>
+		<li><A href="#howto">使い方</A></li>
+		<ul>
+			<li><a href="#menu_menu">[メニュー]</a></li>
+			<ul>
+				<li><a href="#menu_scrshot">[スクリーンショット]</a></li>
+				<li><a href="#menu_menu_rec">[録画]</a></li>
+				<li><a href="#menu_menu_filter">[Filter]</a></li>
+				<li><a href="#menu_menu_blur">[残像機能]</a></li>
+				<li><a href="#menu_menu_exit">[終了]</a></li>
+			</ul>
+			<li><a href="#menu_setting">[設定]</a></li>
+			<ul>
+				<li><a href="#menu_setting_rot">[回転]</a></li>
+				<li><a href="#menu_setting_scal">[倍率]</a></li>
+				<li><a href="#menu_setting_fps">[更新速度]</a></li>
+				<li><a href="#menu_setting_console">[ハード選択]</a></li>
+				<li><a href="#menu_setting_device">[デバイスID]</a></li>
+				<li><a href="#menu_setting_topwindow">[常に手前に表示]</a></li>
+				<li><a href="#menu_setting_errorframe">[エラーフレームを表示しない]</a></li>
+				<li><a href="#menu_setting_setting">[設定]</a></li>
+				<li><a href="#menu_setting_info">[情報]</a></li>
+			</ul>
+		</ul>
+<!--
+		<li><a href="#record">録画(実験中機能)</a></li>
+		<ul>
+			<li><a href="#record_p">用意するもの</a></li>
+			<li><A href="#record_setting">設定</A></li>
+			<li><A href="#record_fllowe">手順</A></li>
+		</ul>
+-->
+		<li><a href="#cmdline">コマンドラインオプション</a></li>
+		<li><a href="#license">ライセンス</a></li>
+		<li><a href="#thank">謝辞</a></li>
+		<li><a href="http://blogs.dion.ne.jp/sorairo/" target="_blank">げーむぼーいまにあ</a><br>(配布場所)</li>
+	</div>
+	<!--  メニューここまで  -->
+	
+	<div id="page_content">
+		<DIV id="indent">
+			<A Name="overview"><B>概要</B></A><br>
+			<DIV id="indent">
+				このソフトは、偽トロキャプチャからリアルタイムに画面を取り込見ながらプレイすることを目指して作成しました。<br>
+				画面の回転(90度単位で左右回転)・拡大・残像再現などができ、ゲーム中に本体の向きを変えながらプレイするゲームにも対応しています。<br>
+			</div>
+			
+			
+			<hr>
+			<A Name="howto"><B>使い方</B></A><br>
+			<DIV id="indent">
+				ハード毎に対応したファームウェアを書き込み済みのカメレオンUSBFX2をＰＣに挿して起動してください。<br>
+			</div>
+			
+			
+			<hr>
+			<A Name="menu_menu"><B>メニュー</B></A><br>
+			<DIV id="indent">
+				<a href="res/wnd-main.png" target="_blank"><img src="res/wnd-main.png" width="160" height="144" align="right"></a>
+				<A Name="menu_menu"><B>[メニュー]</B></A><br>
+				<DIV id="indent">
+					<A Name="menu_scrshot"><B>[スクリーンショット]</B></A><br>
+					<DIV id="indent">
+						スクリーンショットを撮ります。
+					</DIV>
+					<A Name="menu_menu_rec"><B>[録画]</B></A><br>
+					<DIV id="indent">
+						現在、機能停止中です。
+<!--
+						<a href="#record">録画(実験中機能)</a>を参照
+-->
+					</DIV>
+					<A Name="menu_filter"><B>[Filter]</B></A><br>
+					<DIV id="indent">
+						拡大縮小に使うフィルターを選択します。
+					</DIV>
+					<A Name="menu_blur"><B>[残像機能]</B></A><br>
+					<DIV id="indent">
+						残像があるハードの残像を擬似的に再現します。<br>
+						GBソフトで高速点滅するものはGBCモードを使うと半透明表現が再現されます。
+					</DIV>
+					<A Name="menu_menu_exit"><B>[終了]</B></A><br>
+					<DIV id="indent">
+						クリックすると、アプリケーションを終了します。
+<!--
+						<B>※録画している間は、ソフトを終了することができません。</B>
+-->
+					</DIV>
+				</DIV>
+				<A Name="menu_setting"><B>[設定]</B></A><br>
+				<DIV id="indent">
+					<A Name="menu_setting_rot"><B>[回転]</B></A><br>
+					<DIV id="indent">
+						画面を縦方向・左回転・右回転に設定できます。
+					</DIV>
+					<A Name="menu_setting_scal"><B>[倍率]</B></A><br>
+					<DIV id="indent">
+						画面の倍率を等倍・２倍・３倍に設定できます。
+					</DIV>
+					<A Name="menu_setting_fps"><B>[更新速度]</B></A><br>
+					<DIV id="indent">
+						画面更新速度を60fps・30fps・20fps・15fpsに選択できます。
+					</DIV>
+					<A Name="menu_setting_console"><B>[ハード選択]</B></A><br>
+					<DIV id="indent">
+						キャプチャするハードを選択します。<br>
+						<B>事前に必ず対応ファームウェアを書き込んでおいてください。</B>
+					</DIV>
+					<A Name="menu_setting_device"><B>[デバイスID]</B></A><br>
+					<DIV id="indent">
+						複数のカメレオンUSBFX2を使い分けることが出来ます。通常は0で問題ありません。
+					</DIV>
+					<A Name="menu_setting_topwindow"><B>[常に手前に表示]</B></A><br>
+					<DIV id="indent">
+						常に手前に表示することができます。<br>
+						もう一度クリックすると、解除できます。
+					</DIV>
+					<A Name="menu_setting_errorframe"><B>[エラーフレームを表示しない]</B></A><br>
+					<DIV id="indent">
+						PC<->NDS間で通信エラーが起き、乱れた画像を受信しても表示しないようにできます。<br>
+						もう一度クリックすると、解除できます。<br>
+						乱れた画像が表示されていないあいだは、最後に表示された正常な画像が表示され、新しく正常な画像が来るまで更新されません。
+					</DIV>
+					<A Name="menu_setting_setting"><B>[設定]</B></A><br>
+					<DIV id="indent">
+						<a href="res/dlg-config.png" target="_blank"><img src="res/dlg-config.png" width="134" height="94" align="right"></a>
+						設定ダイアログを開きます。<br>
+						[画面の選択]・[回転]・[画面の隙間]・[倍率]をそれぞれ設定できます。<br>
+						[画面の隙間]・[倍率]については、メニュー選択よりも細かく指定できます。
+					</DIV>
+					<A Name="menu_setting_info"><B>[情報]</B></A><br>
+					<DIV id="indent">
+						更新速度などの情報をダイアログに表示します。
+					</DIV>
+				</DIV>
+			</DIV>
+			
+<!--
+			<hr>
+			<A Name="record"><B>録画(実験中機能)</B></A><br>
+			<DIV id="indent">
+				<A Name="record_p"><B>用意するもの</B></A><br>
+				<DIV id="indent">
+					<li>偽トロキャプチャ</li>
+					<li>イヤホン端子とマイク端子をつなぐケーブル</li>
+				</DIV>
+				<br>
+				<A Name="record_setting"><B>設定</B></A><br>
+				<DIV id="indent">
+					<a href="res/dlg-record.png" target="_blank"><img src="res/dlg-record.png" width="148" height="96" align="right"></a>
+					<table border>
+						<tr><td><B>ファイル名</B></td><td>ファイル名が表示されます。<br>「...」ボタンを押すと保存ダイアログが表示されます。<br>拡張子をAVI以外にすると保存時にエラーになります。</td></tr>
+						<tr><td><B>映像コーディック</B></td><td>映像をエンコードするコーディックを選択できます。「-default-」を選択すると、拡張子に設定されているコーディックを使用します。</td></tr>
+						<tr><td><B>FPS</B></td><td>映像のフレーム数を選択できます。</td></tr>
+						<tr><td><B>映像ビットレート</B></td><td>　-　</td></tr>
+						<tr><td><B>録音デバイス</B></td><td>録音デバイスを指定します。WAVE_MAPPERを指定した場合は、Windowsデフォルトの設定を使用します。</td></tr>
+						<tr><td><B>デバイス一覧の更新</B></td><td>デバイス一覧を更新します。USBの録音デバイスなどを追加したときなどに押してください。</td></tr>
+						<tr><td><B>音声コーディック</B></td><td>音声をエンコードするコーディックを選択できます。「-default-」を選択すると、拡張子に設定されているコーディックを使用します。</td></tr>
+						<tr><td><B>サンプリングレート</B></td><td>　-　</td></tr>
+						<tr><td><B>録音ビットレート</B></td><td>　-　</td></tr>
+						<tr><td><B>録画／停止</B></td><td>録画を開始or停止します。<br><B>※録画している間は、ソフトを終了することができません。</B></td></tr>
+						<tr><td><B>　　</B></td><td>　</td></tr>
+					</table>
+				</DIV>
+				<A Name="record_fllowe"><B>手順</B></A><br>
+				<DIV id="indent">
+					メニューから録画を選択し、録画ダイアログを表示する。<br>
+					録音デバイス・保存ファイル名を選択し録画ボタンを押す。<br>
+					きりのいいところで、停止ボタンを押す。<br>
+				</DIV>
+			</DIV>
+-->
+			<hr>
+			<A Name="cmdline"><B>コマンドラインオプション</B></A><br>
+			<DIV id="indent">
+				<table border=1 width="90%">
+					<tr><td width="150px"><B>--dropframe</B></td>				<td>エラーフレームの描画方法を表示しない</td></tr>
+					<tr><td width="150px"><B>--topwindow</B></td>				<td>常に手前に表示する</td></tr>
+					<tr><td width="150px"><B>--scale&nbsp;&lt;倍率&gt;</B></td>	<td>画面の拡大率を指定</td></tr>
+					<tr><td width="150px"><B>--rotation-left</B></td>			<td>左回転させて表示する</td></tr>
+					<tr><td width="150px"><B>--rotation-right</B></td>			<td>右回転させて表示する</td></tr>
+					<tr><td width="150px"><B>--frameskip-60fps</B></td>			<td>フレームスキップ(60fpsで表示)</td></tr>
+					<tr><td width="150px"><B>--frameskip-30fps</B></td>			<td>フレームスキップ(30fpsで表示)</td></tr>
+					<tr><td width="150px"><B>--frameskip-20fps</B></td>			<td>フレームスキップ(20fpsで表示)</td></tr>
+					<tr><td width="150px"><B>--frameskip-15fps</B></td>			<td>フレームスキップ(15fpsで表示)</td></tr>
+					<tr><td width="150px"><B>--cusb2id&nbsp;&lt;ID&gt;</B></td>	<td>使用する偽トロキャプチャを指定する<br>カメレオンＵＳＢ FX2のデバイスID番号を指定してください。</td></tr>
+				</table>
+				<br>
+				<B>設定方法</B><br>
+				ショートカットを作成してください。<br>
+				作成したショートカットを選択し、右クリックしてメニューから「プロパティ」を選択してください。<br>
+				「ショートカットタブ」内の「リンク先」の一番最後に半角スペースを入れてから、コマンドラインオプションを追加してください。<br>
+				<br>
+				<a href="res/cmdline-example.png" target="_blank"><img src="res/cmdline-example.png" width="96" height="59" title="例1" align="right"></a><br>
+				例1：「<code>"～～\NiseTroPreviewDX9.exe"&nbsp;--topwindow&nbsp;--rotation-left</code>」<br>
+				<DIV id="indent">
+					「常に手前に表示」「画面の左回転」のオプションを指定しています。
+				</DIV>
+				<br>
+				<a href="res/cmdline-example2.png" target="_blank"><img src="res/cmdline-example2.png" width="157" height="51" title="例2" align="right"></a><br>
+				例2：「<code>"～～\NiseTroPreviewDX9.exe"&nbsp;--cusb2id&nbsp;1&nbsp;--scale&nbsp;2.5&nbsp;</code>」<br>
+				<DIV id="indent">
+					「デバイスIDを1」「拡大率を2.5倍」のオプションを指定しています。
+				</DIV>
+				<br>
+			</DIV>
+			
+			<hr>
+			<A Name="license"><B>ライセンス</B></A><br>
+			<DIV id="indent">
+				偽トロプレビューのライセンスは、LGPLv2.1以降です。<br>
+				偽トロプレビューは、DirectX SDK、MSXML、ffmpeg、msinttypesを使用しています。<br>
+			</DIV>
+			<hr>
+			<a Name="thank"><B>謝辞</B></a><br>
+			<DIV id="indent">
+				もともとDSのキャプチャ用に作られた偽トロキャプチャですが<br>
+				ピピン氏及びMM氏両名がオープンソースで開発していたため<br>
+				他のハードをキャプチャすることができるようになりました。<br>
+				ピピン氏及びMM氏両名に感謝いたしております。<br>
+				<br>
+				ピピン氏のブログ：<a href="http://pipin.blog.eonet.jp/">偽トロキャプチャと車とかとか</a><br>
+				MM氏が配布していた場所：<a href="http://jacobi.sakura.ne.jp/nisetro.html">偽トロプレビュー置き場</a>(閉鎖中)<br>
+			</div>
+			<br>
+			<br>
+			<br>
+		</div>
+	</div>
+<!--	<div id="footer">
+	</div>-->
+</div>
+</BODY>
+</HTML>

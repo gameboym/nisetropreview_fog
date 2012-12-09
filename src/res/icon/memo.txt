@@ -1,0 +1,14 @@
+ 16	あるといい
+ 32	必須
+ 48	あるといい
+256	あるといい
+※私見
+
+
+オプション
+ 24	
+ 96	
+128	
+
+http://msdn.microsoft.com/en-us/library/aa511296.aspx
+

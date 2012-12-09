@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+#border-l
+{
+	background-image: url(border-h.png);
+	background-repeat: repeat-y;
+	background-position:-0px -0px;
+	width:7px;
+}
+
+#border-r
+{
+	background-image: url(border-h.png);
+	background-repeat: repeat-y;
+	background-position:-9px -0px;
+	width:7px;
+}
+
+#border-t
+{
+	background-image: url(border-v.png);
+	background-repeat: repeat-x;
+	background-position:-0px -0px;
+	height:7px;
+}
+
+#border-b
+{
+	background-image: url(border-v.png);
+	background-repeat: repeat-x;
+	background-position:-0px -9px;
+	height:9px;
+}
+
+#border-lt
+{
+	float:left;
+	background: url(border-m.png) -0px -0px;
+	width:7px;
+	height:7px;
+}
+
+#border-lb
+{
+	float:left;
+	background: url(border-m.png) -0px -9px;
+	background-repeat: no-repeat;
+	width:7px;
+	height:9px;
+}
+
+#border-rt
+{
+	float:right;
+	background: url(border-m.png) -9px -0px;
+	width:7px;
+	height:7px;
+}
+
+#border-rb
+{
+	float:right;
+	background: url(border-m.png) -9px -9px;
+	background-repeat: no-repeat;
+	width:7px;
+	height:9px;
+}
+
+a:link {
+	color: #0000ff;
+}
+
+
+a:visited {
+	color: #000080;
+}
+
+
+a:hover {
+	background-color: #e0e0e0;
+	color: #ff0000;
+}
+
+
+a:active {
+	color: #ff8000;
+}
+
+//コメント
+
