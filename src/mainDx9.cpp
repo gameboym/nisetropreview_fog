@@ -679,6 +679,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd,UINT uMsg,WPARAM wParam,LPARAM lParam)
 					case ID_MENU_CONSOLE_NGPC:
 					case ID_MENU_CONSOLE_SC:
 					case ID_MENU_CONSOLE_PIECE:
+					case ID_MENU_CONSOLE_GG:
 						{
 							g_nise.NisetroQuit();
 							if( id == ID_MENU_CONSOLE_GBC )		g_AppConfig.m_iconsole = CONSOLE_GAMEBOYCOLOR;
@@ -686,6 +687,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd,UINT uMsg,WPARAM wParam,LPARAM lParam)
 							if( id == ID_MENU_CONSOLE_NGPC )	g_AppConfig.m_iconsole = CONSOLE_NEOGEOPOCKETCOLOR;
 							if( id == ID_MENU_CONSOLE_SC )		g_AppConfig.m_iconsole = CONSOLE_SWANCRYSTAL;
 							if( id == ID_MENU_CONSOLE_PIECE )	g_AppConfig.m_iconsole = CONSOLE_PIECE;
+							if( id == ID_MENU_CONSOLE_GG )		g_AppConfig.m_iconsole = CONSOLE_GAMEGEAR;
 							change_console();
 							g_nise.NisetroInit( g_AppConfig.m_eFrmSkip, g_AppConfig.m_iCUSB2_ID, hwnd);
 							D3DUpdateScreenConfig( &g_AppConfig , g_hWnd );

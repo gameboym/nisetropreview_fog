@@ -235,6 +235,7 @@ BEGIN
 			MENUITEM "ネオジオポケットカラー",			ID_MENU_CONSOLE_NGPC
 			MENUITEM "ワンダースワンクリスタル",		ID_MENU_CONSOLE_SC
 			MENUITEM "P/ECE",							ID_MENU_CONSOLE_PIECE
+			MENUITEM "ゲームギア",						ID_MENU_CONSOLE_GG
 		END
         POPUP "デバイスID"
 		BEGIN

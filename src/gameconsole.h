@@ -22,7 +22,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 #ifndef __GAMECONSOLE_H__
 #define __GAMECONSOLE_H__
 
-#define		MAX_CONSOLE_NUM				5	// 対応ゲーム機台数
+#define		MAX_CONSOLE_NUM				6	// 対応ゲーム機台数
 #define		MAX_CONSOLE_NAME_SIZE		128	// ハード名サイズ
 
 #define		CONSOLE_ERROR				-1
@@ -36,6 +36,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 #define		CONSOLE_SWANCRYSTAL			2
 #define		CONSOLE_ORIGINALGAMEBOY		3
 #define		CONSOLE_PIECE				4
+#define		CONSOLE_GAMEGEAR			5
 
 typedef struct consoledata{
 	int		width;
@@ -53,6 +54,7 @@ const static CONSOLEDATA consoledata[MAX_CONSOLE_NUM] = {
 	{224,	144,	CONSOLE_COLOR_COLOR,	4,		{75, 60, 30, 15},	"SWANCRYSTAL"},			// SC
 	{160,	144,	CONSOLE_COLOR_MONOCHROME,	2,	{60, 30, 20, 15},	"GAMEBOY"},				// GB
 	{128,	88,		CONSOLE_COLOR_MONOCHROME,	2,	{60, 30, 20, 15},	"P/ECE"},				// P/ECE
+	{160,	144,	CONSOLE_COLOR_COLOR,	4,		{60, 30, 20, 15},	"GAMEGEAR"},			// GAMEGEAR
 };
 
 class CCONSOLEGAMES

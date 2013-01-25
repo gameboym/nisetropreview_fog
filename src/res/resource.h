@@ -101,6 +101,7 @@
 #define ID_MENU_CONSOLE_SC				40082
 #define ID_MENU_CONSOLE_OGB				40083
 #define ID_MENU_CONSOLE_PIECE			40084
+#define ID_MENU_CONSOLE_GG				40085
 
 // Next default values for new objects
 // 
