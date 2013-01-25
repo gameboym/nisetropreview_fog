@@ -301,7 +301,7 @@ BEGIN
         BEGIN
             VALUE "Comments", "偽トロ用プレビューソフト"
             VALUE "FileDescription", "偽トロプレビュー for OldGames"
-            VALUE "FileVersion", "2012/1/18"
+            VALUE "FileVersion", "2013/1/25"
             VALUE "OriginalFilename", "NiseTroPreview*.exe"
 			VALUE "ProductVersion", "local svn revision:266"
         END
