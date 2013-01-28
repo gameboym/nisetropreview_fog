@@ -82,7 +82,13 @@ void CNISETRO::func_first( u8* buf , u32 len ){
 			
 			// エラーチェック
 			unsigned long ulScrBufSize = pNise->m_scrsize;
-			if( pNise->m_CapBufCur < ulScrBufSize ){
+			if(g_console.GetConsole() == CONSOLE_PIECE){
+				// P/ECEは受信フォーマットが異なりスクリーンサイズの1/3のサイズとなる(モノクロ→RGBで3倍となる))
+				if( (pNise->m_CapBufCur * 3) < ulScrBufSize ){
+					if( pNise->m_ulErrFrm++ == 0xFFFFFFFF )	pNise->m_ulErrFrm = 0;
+					bError = true;
+				}
+			} else if( pNise->m_CapBufCur < ulScrBufSize ){
 				if( pNise->m_ulErrFrm++ == 0xFFFFFFFF )	pNise->m_ulErrFrm = 0;
 				bError = true;
 			}

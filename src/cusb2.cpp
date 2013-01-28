@@ -206,7 +206,7 @@ void thread_proc(cusb2_tcb *tcb)
 			if(!ep->WaitForXfer(&(ovlp[i]),2000))
 			{
 				ep->Abort();
-				WaitForSingleObject(&(ovlp[i]),500);
+				WaitForSingleObject(&(ovlp[i]),2000);
 			}
 
 			len = tcb->xfer;
@@ -261,10 +261,10 @@ void thread_proc(cusb2_tcb *tcb)
 		}
 		for(i=0;;)
 		{
-			if(!ep->WaitForXfer(&(ovlp[i]),500))
+			if(!ep->WaitForXfer(&(ovlp[i]),2000))
 			{
 				ep->Abort();
-				WaitForSingleObject(&(ovlp[i]),500);
+				WaitForSingleObject(&(ovlp[i]),2000);
 			}
 
 			len = tcb->xfer;
